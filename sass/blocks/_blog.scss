@@ -1,0 +1,28 @@
+.blog {
+	padding-bottom: 150px;
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 40px;
+		margin-bottom: 70px;
+	}
+	&__item {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		&-img {
+		margin-bottom: 30px;
+		}
+		&-title {
+			font-weight: 700;
+			font-size: 24px;
+		}
+		&-link {
+			color: $white-color;
+			background-color: $blue-color;
+			padding: 5px 20px;
+		}
+	}
+}

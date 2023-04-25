@@ -1,0 +1,28 @@
+.top {
+	text-align: center;
+	padding-top: 105px;
+	color: $white-color;
+
+	position: absolute;
+	top: 145px;
+	left: 0;
+    right: 0;
+	z-index: 4;
+
+	&__title {
+		font-weight: 700;
+		font-size: 96px;
+		line-height: 116px;
+		margin-bottom: 38px;
+	}
+	&__link {
+		display: inline-block;
+		max-width: 430px;
+		width: 100%;
+		font-size: 36px;
+		line-height: 44px;
+		text-transform: uppercase;
+		padding: 23px;
+		background-color: $black-color;
+	}
+}

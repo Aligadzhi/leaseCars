@@ -1,0 +1,57 @@
+.choose {
+	padding: 100px 0 150px;
+}
+
+.tabs {
+	margin-bottom: 70px;
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		gap: 80px;
+		margin-bottom: 100px;
+
+		&-item {
+			font-weight: 700;
+			font-size: 24px;
+		}
+	}
+	&__content-item {
+		display: none;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 100px 40px;
+
+		&.tabs__content-item--active {
+			display: grid;
+		}
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	border: 1px solid $blue-color;
+
+	&__img {
+		width: 100%;
+		border-bottom: 1px solid $blue-color;
+	}
+	&__title, &__price {
+		text-align: center;
+		font-weight: 700;
+		font-size: 24px;
+	}
+	&__link {
+		width: 100%;
+		text-align: center;
+		border-top: 1px solid $blue-color;
+		color: $blue-color;
+		padding: 2px 0;
+	}
+}
+
+.tabs__btn-item--active {
+	color: $blue-color;
+}

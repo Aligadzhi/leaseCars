@@ -1,0 +1,66 @@
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: $black-color;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.button {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $black-color;
+    padding: 13px 61px;
+    cursor: pointer;
+    border: none;
+}
+
+.header--main {
+    background-color: $black-color;
+}
+
+.header--psition {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.show-more {
+    display: block;
+    max-width: 225px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 13px;
+    color: $white-color;
+    background-color: $black-color;
+    margin: 0 auto;
+}

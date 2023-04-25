@@ -1,0 +1,15 @@
+.video {
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__text {
+		font-weight: 700;
+		font-size: 24px;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	&__content {
+		margin: 0 auto;
+		display: block;
+	}
+}

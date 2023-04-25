@@ -1,0 +1,21 @@
+.important {
+	padding: 150px 0;
+
+	&__title {
+		margin-bottom: 20px;
+	}
+	&__text {
+		max-width: 580px;
+		margin: 0 auto 50px;
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 40px;
+	}
+	&__item-img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+}

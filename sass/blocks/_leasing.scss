@@ -1,0 +1,51 @@
+.leasing {
+	margin-bottom: 150px;
+
+	&__inner {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	&__subtitle {
+		font-weight: 700;
+		font-size: 24px;
+		padding-top: 50px;
+		margin-bottom: 50px;
+	}
+	&__list {
+		max-width: 510px;
+		margin-bottom: 70px;
+		counter-reset: myCounter;
+		margin-left: auto;
+	}
+	&__item {
+		width: 270px;
+		list-style: none;
+		position: relative;
+		margin-left: auto;
+		padding: 19px 0 19px 240px;
+		box-sizing: content-box;
+		min-height: 63px;
+
+		& + & {
+			margin-top: 40px;
+		}
+	}
+	&__item::before {
+		counter-increment: myCounter;
+		content: counter(myCounter);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		font-size: 48px;
+		text-align: center;
+		color: $white-color;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color: $blue-color;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
